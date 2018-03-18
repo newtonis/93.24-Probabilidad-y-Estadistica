@@ -1,0 +1,31 @@
+clear;
+
+%A=imread('lena512.bmp');
+
+%B = A;
+
+%reshape(B,[],1)
+
+
+
+
+
+A=imread('lena512.bmp');
+    B = A;
+N=16;
+    for k=1:512/N
+        f=1+(k-1)*N:k*N;
+       for r=1:512/N
+           c=1+(r-1)*N:r*N;
+           m=median( reshape(B(f,c),N*N,1) );
+            B(f,c) = ones(N,N)*m;
+        end
+    end
+
+   imwrite(B,'mean_output.bmp');
+    
+%cut16('lena512.bmp','min_output.bmp',16,@mean);
+
+%cut16('lena512.bmp','mean_output.bmp',16,@mean);
+%cut16('lena512.bmp','median_output.bmp',16,@median);
+%cut16('lena512.bmp','max_output.bmp',16,@max);
