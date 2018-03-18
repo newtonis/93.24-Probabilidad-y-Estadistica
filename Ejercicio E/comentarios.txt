@@ -1,0 +1,11 @@
+Con el percentil 25 de cada columna, llámese primer quartil,
+toda la piel se vuelve invariante y se toma como si fuera blanca.
+El orificio solamente quedo negro (el de la nariz)
+Al contrario de lo que ocurre con el percentil 75, en donde lo que 
+solía ser la nariz en la imagen original se tornó totalmente negra incluyendo
+la sombra de la misma. 
+Lo mas llamativo a remarcar es que aquellos valores que cambiaron con el criterio del
+1er quartile y tambien lo hicieron con 3er quartile, significa que estan en una
+escala de grises (entre 25 y 75 porciento). Como la diferencia entre ambas
+transformaciones es marcada, se puede afirmar que la distribucion de datos estan
+en una zona intermedia, también conocida como zona interquartil.
