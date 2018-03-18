@@ -1,6 +1,6 @@
 clc;
 
-iscol = 1;
+iscol = 0;
 if iscol
     A = imread('lena512.bmp');
     imshow(A);
@@ -9,6 +9,9 @@ else
     A=B';    
     imshow(A);
 end
+
+%si queremos 512 boxplots (con las columnas/filas desordenadas)
+%boxplot(A);
 
 len=length(A);
 
@@ -19,6 +22,7 @@ FirstQuantile = 1:len;
 ThirdQuantile = 1:len;
 
 for i=1:len
+sort(A(i,:));
 MeanVector(i) = mean(A(i,:));  %extraigo la iesima columna y le aplico mean a ese vector
 MaxVector(i) = max(A(i,:));
 MinVector(i) = min(A(i,:));
@@ -28,9 +32,8 @@ end
 
 %descomentamos en función de lo que queremos ver
 
-plot(MeanVector);
+%plot(MeanVector);
 %plot(MaxVector);
 %plot(MinVector);
 %plot(FirstQuantile);
-%plot(ThirdQuantile);
-%boxplot(A);
+plot(ThirdQuantile);
