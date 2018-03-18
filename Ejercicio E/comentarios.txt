@@ -1,4 +1,4 @@
-Con el percentil 25 de cada columna, llámese primer quartil,
+Con el percentil 25 de cada fila, llámese primer quartil,
 toda la piel se vuelve invariante y se toma como si fuera blanca.
 El orificio solamente quedo negro (el de la nariz)
 Al contrario de lo que ocurre con el percentil 75, en donde lo que 

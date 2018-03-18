@@ -1,7 +1,7 @@
 clc;
 
-iscol = 0;
-if iscol
+isrow = 0;
+if isrow
     A = imread('lena512.bmp');
     imshow(A);
 else
@@ -23,7 +23,7 @@ ThirdQuantile = 1:len;
 
 for i=1:len
 sort(A(i,:));
-MeanVector(i) = mean(A(i,:));  %extraigo la iesima columna y le aplico mean a ese vector
+MeanVector(i) = mean(A(i,:));  %extraigo la iesima fila y le aplico mean a ese vector
 MaxVector(i) = max(A(i,:));
 MinVector(i) = min(A(i,:));
 FirstQuantile(i) = quantile(A(i,:),0.25);
