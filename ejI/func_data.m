@@ -5,7 +5,7 @@ function [out ] = func_data( a,b , A)
     b = min(b,M);
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
-    out = (double(a) + double(b-a)/double(M-m)) * (A - m);
+    out = double(a) + double(b-a)/double(M-m) * (A - m);
    
 end
 
