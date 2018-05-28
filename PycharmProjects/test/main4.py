@@ -63,6 +63,7 @@ def main():
 
     data_n = calcular_estimador(data , r = 10000, n = 100 , m = 10)
 
+    
     #data_err = calcular_error(data_n , vec_n)
 
 
